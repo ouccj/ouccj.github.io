@@ -402,7 +402,7 @@
                 
               
 
-              <time title="创建时间：2019-09-02 14:56:11 / 修改时间：16:24:51" itemprop="dateCreated datePublished" datetime="2019-09-02T14:56:11+08:00">2019-09-02</time>
+              <time title="创建时间：2019-09-02 14:56:11 / 修改时间：21:42:23" itemprop="dateCreated datePublished" datetime="2019-09-02T14:56:11+08:00">2019-09-02</time>
             
 
             
@@ -459,17 +459,9 @@
 
       
         
-          
-            <p>
-              cube_slam安装步骤参照github连接：https://github.com/shichaoy/cube_slam1、Prerequisitesmkdir -p ~/cubeslam_ws/srccd ~/cubeslam_ws/srccatkin_init_workspace#此时出现错误1git clone https://github.com/shichaoy/cube_slamcd cube_slam
+          <h5 id="cube-slam安装步骤"><a href="#cube-slam安装步骤" class="headerlink" title="cube_slam安装步骤"></a>cube_slam安装步骤</h5><h6 id="参照github连接：https-github-com-shichaoy-cube-slam"><a href="#参照github连接：https-github-com-shichaoy-cube-slam" class="headerlink" title="参照github连接：https://github.com/shichaoy/cube_slam"></a>参照github连接：<a href="https://github.com/shichaoy/cube_slam" target="_blank" rel="noopener">https://github.com/shichaoy/cube_slam</a></h6><h5 id="1、Prerequisites"><a href="#1、Prerequisites" class="headerlink" title="1、Prerequisites"></a>1、Prerequisites</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/cubeslam_ws/src</span><br><span class="line">cd ~/cubeslam_ws/src</span><br><span class="line"></span><br><span class="line">catkin_init_workspace</span><br><span class="line"><span class="meta">#</span>此时出现错误1</span><br><span class="line"></span><br><span class="line">git clone https://github.com/shichaoy/cube_slam</span><br><span class="line">cd cube_slam</span><br></pre></td></tr></table></figure>
 
-2、Compile dependency g2osh install_dependenices.sh
-
-3、Compilecd ~/cubeslam_wscatkin_make -j4#执行此命令后，出现错误2的情况。发现是需要安装eigen，安装完成后再次执行此命令，会出现错误3，其原因是没有安装ROS，安装ROS之后再次执行此命令即可。
-
-4、Runningcd ~/cubeslam_wssource devel/setup.bashroslaunch object_slam object_slam_example.launch#执行完此命令后会运行cube_sla
-              ...
-            </p>
+<h5 id="2、Compile-dependency-g2o"><a href="#2、Compile-dependency-g2o" class="headerlink" title="2、Compile dependency g2o"></a>2、Compile dependency g2o</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh install_dependenices.sh</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
